@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -47,5 +49,149 @@
                 android:layout_height="100dp"
                 android:src="@drawable/start"/>
         </LinearLayout>
-    </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_jt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="交通图标"
+                android:textSize="20sp"
+                android:textColor="#F587AC"/>
+            <LinearLayout
+                android:id="@+id/ll_ibtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/imb_jt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_traffic"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交通标志"
+                        android:textColor="#F587AC"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/imb_ybp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_time"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="仪表盘指示灯"
+                        android:textColor="#F587AC"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/imb_xbjj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_thumb_up_alt"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新版交警手势"
+                        android:textColor="#F587AC"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ffffff" />
+        <LinearLayout
+            android:id="@+id/ll_ibtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/imb_cngn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_touch_app"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车内功能按钮"
+                    android:textColor="#F587AC"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/imb_jtsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_commute"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交通事故图解"
+                    android:textColor="#F587AC"
+                    android:textSize="12dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
 </FrameLayout>

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -56,6 +57,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ll1.setVisibility(View.VISIBLE);
             }
         });
+        btnjiaojuan.findViewById(R.id.btn_jiaojuan);
+        btnjiaojuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "考试结束，成绩不合格！", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
     }
 
     private void initListener() {
@@ -213,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lv_main = (ListView) findViewById(R.id.lv_main);
         tvtime = (TextView) findViewById(R.id.tvtime);
 
-        btnjiaojuan = (Button) findViewById(R.id.btnjiaojuan);
+        btnjiaojuan = (Button) findViewById(R.id.btn_jiaojuan);
         btnjiaojuan.setOnClickListener(this);
         ll1 = (LinearLayout) findViewById(R.id.ll1);
         ll1.setOnClickListener(this);
@@ -245,10 +255,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnjiaojuan:
 
-                break;
-        }
     }
 }

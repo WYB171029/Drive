@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".MeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,7 +16,7 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tvtime"
+            android:id="@+id/tv_me"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -22,5 +25,129 @@
             android:textSize="18sp" />
     </LinearLayout>
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ib_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tu_biao"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击进行登录"
+        android:textColor="#F587AC"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
 
-</FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:text="科目一"
+        android:textSize="18sp"
+        android:textColor="#F587AC"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="科目二"
+        android:textSize="18sp"
+        android:textColor="#F587AC"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="科目三"
+        android:textSize="18sp"
+        android:textColor="#F587AC"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="科目四"
+        android:textSize="18sp"
+        android:textColor="#F587AC"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="50dp"
+        android:background="#000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="联系我们"
+        android:textSize="18sp"
+        android:textColor="#F587AC"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/round_keyboard_arrow_right"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="设置"
+        android:textSize="18sp"
+        android:textColor="#F587AC"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+</LinearLayout>
