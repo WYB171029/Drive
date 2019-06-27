@@ -104,7 +104,7 @@
         android:paddingLeft="5dp"
         android:text="科目四"
         android:textSize="18sp"
-        android:textColor="#F587AC"/>
+        android:textColor="#F587AC" />
     <View
         android:layout_width="fill_parent"
         android:layout_height="1px"
