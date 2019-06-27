@@ -110,7 +110,7 @@
         android:layout_height="1px"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:background="#000000" />
+        android:background="#000000"/>
     <View
         android:layout_width="fill_parent"
         android:layout_height="1px"
